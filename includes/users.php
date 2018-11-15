@@ -88,7 +88,7 @@ function bursardetails()
 	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con,$sql);
 	while ($row =mysqli_fetch_array($query)) {
-		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
+        echo "<marquee>Welcome, <i>".$row['fname']." ".$row['sname']."</i></marquee> (<a href='../logout.php'>Logout</a>)";
 	}
 }
 
@@ -101,7 +101,7 @@ function doctordetails()
 	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con,$sql);
 	while ($row =mysqli_fetch_array($query)) {
-		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
+	echo "<marquee>Welcome, <i>".$row['fname']." ".$row['sname']."</i></marquee> (<a href='../logout.php'>Logout</a>)";
 	}
 }
 
@@ -114,7 +114,7 @@ function receptiondetails()
 	$query = mysqli_query($con,$sql);
 	while ($row =mysqli_fetch_array($query)) {	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 
-		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
+	echo "<marquee>Welcome, <i>".$row['fname']." ".$row['sname']."</i></marquee> (<a href='../logout.php'>Logout</a>)";
 	}
 }
 
@@ -126,7 +126,7 @@ function laboratorydetails()
 	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con,$sql);
 	while ($row =mysqli_fetch_array($query)) {
-		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
+	echo "<marquee>Welcome, <i>".$row['fname']." ".$row['sname']."</i></marquee> (<a href='../logout.php'>Logout</a>)";
 	}
 }
 
@@ -138,7 +138,7 @@ function pharmacydetails()
 	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con,$sql);
 	while ($row =mysqli_fetch_array($query)) {
-		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
+	echo "<marquee>Welcome, <i>".$row['fname']." ".$row['sname']."</i></marquee> (<a href='../logout.php'>Logout</a>)";
 	}
 }
 
