@@ -1,21 +1,24 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #A69C9B;
-	font-family: Arial,Lucida Sans;
+	background-color: rgba(193, 194, 195, 0.72);
+	font-family: "lato" sans-serif;
+    border-radius: 10px;
 }
 .wrapper{
 	min-height: 400px;
 	max-height: auto;
 	width: 85%;
 	margin: 0 auto;
-	font-family: Arial,Lucida Sans;
+	font-family: "lato" sans-serif;
 }
 .header{
 	height: 50px;
 	width: 100%;
 	background-color: #408080;
 	float: left;
+        
+
 }
 .headerleft{
 	height: auto;
@@ -23,7 +26,7 @@ body{
 	float: left;
 	color: white;
 	font-size: 16px;
-	font-family: Arial;
+	font-family: "lato" sans-serif;
 	padding: 13px 20px;
 }
 .headerright{
@@ -32,7 +35,7 @@ body{
 	float: left;
 	color: white;
 	font-size: 16px;
-	font-family: Arial;
+	font-family: "lato" sans-serif;
 	padding: 13px 20px;
 }
 .headerright a{
@@ -41,11 +44,13 @@ body{
 	color: red;
 }
 .footer{
+    
 	height: 50px;
 	width: 100%;
-	background-color: #408080;
+	background-color: rgba(16, 73, 114, 0.74);
 	float: left;
 	margin-top: 10px;
+    border-radius: 10px;
 }
 .left{
 	min-height: 400px;
@@ -60,11 +65,12 @@ body{
 {
 	height: 30px;
 	width: 120px;
-	background-color: #408080;
+	background-color: rgba(5, 68, 121, 0.74);
 	border: 0;
 	margin: 0;
 	color: white;
 	cursor: pointer;
+    
 }
 .right{
 	min-height: 400px;
@@ -122,3 +128,4 @@ table{
 		margin-left: 0px;
 	}
 }
+

@@ -9,20 +9,25 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 <head>
 	<meta charset="UTF-8">
 	<title>Admin Dashboard - HMS</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
-	<style type="text/css">
-	.total{
+</head>
+    <style>
+       .total{
 		height: 120px;
 		width: 170px;
-		border: 1px solid #408080;
+		border: 1px solid rgba(24, 85, 123, 0.75);
 		margin-top: 25px;
 		margin-left: 40px;
 		float: left;
 		text-align: center;
 		padding-top: 20px;
+        border-radius: 10px;
 	}
-	</style>
-</head>
+    </style>
 <body>
 	<div class="wrapper">
 	<?php
@@ -37,7 +42,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 
 				$sql = "SELECT * FROM `users` WHERE `type`='Reception'";
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
 				 ?>
 			</div>
 
@@ -49,7 +54,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 				$sql = "SELECT * FROM `users` WHERE `type`='NormalDoctor' OR `type`='DentalDoctor' OR `type`='WomenDoctor'";
 				
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
 				 ?>
 			</div>
 
@@ -60,7 +65,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 
 				$sql = "SELECT * FROM `users` WHERE `type`='Laboratory'";
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>";
 				 ?>
 			</div><br><br>
 			<div class="total">
@@ -71,7 +76,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 				$sql = "SELECT * FROM `users` WHERE `type`='Admin'";
 				
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
 				 ?>
 			</div>
 
@@ -82,7 +87,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 
 				$sql = "SELECT * FROM `users` WHERE `type`='Pharmacy'";
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>";
 				 ?>
 			</div>
 
@@ -93,7 +98,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 
 				$sql = "SELECT * FROM `users` WHERE `type`='Bursar'";
 				$query = mysqli_query($con,$sql);
-				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>"; 
+				echo "<br><b style='color:rgba(24, 85, 123, 0.75); font-family:Arial; font-size:35px;'>".$row = mysqli_num_rows($query)."</b>";
 				 ?>
 			</div>
 		</div>

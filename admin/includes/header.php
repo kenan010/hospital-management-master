@@ -5,7 +5,7 @@
 	<div class="headerright">
 		<b>
 			<?php
-			require '../includes/connect.php';
+            require '../includes/connect.php';
 			require '../includes/users.php';
 			admindetails();
 			 ?>

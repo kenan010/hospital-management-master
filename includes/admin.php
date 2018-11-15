@@ -44,7 +44,7 @@ function adduser()
 	$pass = sha1($password);
 
 	$sql1 = "SELECT * FROM `users` WHERE `username`='$username'";
-	$query1 = mysqli_query($sql1);
+	$query1 = mysqli_query($con,$sql1);
 	if (mysqli_num_rows($query1)==0) {
 		$sql = "INSERT INTO `users` VALUES ('$username','$pass','$fname','$sname','$type')";
 		$query = mysqli_query($con,$sql);

@@ -112,7 +112,8 @@ function receptiondetails()
 	$username = $_SESSION['reception'];
 	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
 	$query = mysqli_query($con,$sql);
-	while ($row =mysqli_fetch_array($query)) {
+	while ($row =mysqli_fetch_array($query)) {	$sql = "SELECT * FROM `users` WHERE `username`='$username' AND `type`='$type'";
+
 		echo "Welcome, <i>".$row['fname']." ".$row['sname']."</i> (<a href='../logout.php'>Logout</a>)";
 	}
 }
